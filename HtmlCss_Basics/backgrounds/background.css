@@ -1,0 +1,12 @@
+.header { background-color: green; }
+
+.default { background-color: red; }
+.default.first { opacity: 0.1; }
+.default.second { opacity: 0.3; }
+.default.third { opacity: 0.6; }
+
+.rgba { background: rgba(0, 0, 255, 0);;}
+.rgba.first { background: rgba(0, 0, 255, 0.1); }
+.rgba.second { background: rgba(0, 0, 255, 0.3); }
+.rgba.third { background: rgba(0, 0, 255, 0.9); }
+
