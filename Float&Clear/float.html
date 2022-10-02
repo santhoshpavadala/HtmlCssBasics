@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .container {
+            background: saddlebrown;
+            border: 5px solid salmon;
+            width: 900px;
+            margin: 33px auto;
+        }
+        .items {
+            background-color: rgb(29, 131, 190);
+            border: 3px solid rgb(45, 18, 224);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #fruit { 
+            float: left;
+            width: 48%;
+        }
+        #computers { 
+            float: right;
+            width: 48%;
+        }
+        #stationary {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Float use to left and right and Clear to restricts the left and right overlaping</h2>
+        <div id="fruit" class="items">
+            <h2>Fruits Container</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veritatis amet cumque deserunt ex vitae tempore facere voluptas! Consequatur cupiditate doloribus voluptas nulla officiis, possimus adipisci soluta provident eius fuga quibusdam eos.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed cum magni quas alias deserunt ipsa architecto quam, iure provident quasi soluta commodi reprehenderit. Ut maxime, amet laudantium culpa rerum perferendis nostrum sequi obcaecati recusandae harum!
+            </p>
+        </div>
+        <div id="computers" class="items">
+            <h2>Computers Container</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veritatis amet cumque deserunt ex vitae tempore facere voluptas! Consequatur cupiditate doloribus voluptas nulla officiis, possimus adipisci soluta provident eius fuga quibusdam eos.lorem35
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed cum magni quas alias deserunt ipsa architecto quam, iure provident quasi soluta commodi reprehenderit. Ut maxime, amet laudantium culpa rerum perferendis nostrum sequi obcaecati recusandae harum!
+                architecto quam, iure provident quasi soluta commodi reprehenderit. Ut maxime, amet laudantium culpa rerum perferendis nostrum sequi obcaecati recusandae harum!
+            </p>
+        </div>
+        <div id="stationary" class="items">
+            <h2>Stationary Container</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veritatis amet cumque deserunt ex vitae tempore facere voluptas! Consequatur cupiditate doloribus voluptas nulla officiis, possimus adipisci soluta provident eius fuga quibusdam eos.</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h2>Stationary Container</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veritatis amet cumque deserunt ex vitae tempore facere voluptas! Consequatur cupiditate doloribus voluptas nulla officiis, possimus adipisci soluta provident eius fuga quibusdam eos.</p>
+        </div>
+    </div>
+</body>
+</html>

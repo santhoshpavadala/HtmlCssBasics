@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+
+    <style>
+        h1 { background-color: red; color: white; font-weight: bold; text-align: center; }
+        div p {
+            background-color: rgb(42, 165, 83);
+            font-weight: bold;
+            color: white;
+        }
+        div li p {
+            background-color: rgb(38, 6, 218);
+            color: wheat;
+            font-weight: bold;
+        }
+
+        /* Under div direct child if p then only works */
+        div > p {
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* This is siblings of div and p (div after next p)*/
+        div + p {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>This is main h1 Header</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is li paragraph</p></li>
+                <li>This will not get effect</li>
+                <p>This para is not direct child of div,child of ul</p>
+            </ul>
+            <p>Tis is row paragraph</p>
+        </div>
+        <p>This is div paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

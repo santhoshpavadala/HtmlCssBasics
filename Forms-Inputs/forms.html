@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+    <script src="https://kit.fontawesome.com/cf84f74527.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>A full width Input</h2>
+
+    <form action="">
+
+        <h2>Border color Inputs</h2>
+        <label for="fname">First Name</label>
+        <input class="input1" type="text" name="fname" id="fname">
+
+        <h2>Background inputs</h2>
+        <label for="sname">Second Name</label>
+        <input class="input2" type="text" name="sname" id="sname">
+
+        <h2>Input fields with bottom border</h2>
+        <label for="sname">Second Name</label>
+        <input class="input3" type="text" name="sname" id="sname">
+
+        <h2>Focused Inputs</h2>
+        <p>By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding outline: none; to the input.
+        <label for="focus">Focused Inputs</label>
+        Use the :focus selector to do something with the input field when it gets focus:</p>
+        <input class="focusInput" type="text" name="focus" id="focus">
+
+        <h2>Search Icon Inputs</h2>
+        <p>If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:</p>
+        <label for="focus">Input with Icon / Image</label>
+        <input class="iconInput" type="text" name="search" placeholder="Search..">
+
+        <h2>Animated Search width increase icon</h2>
+        <p>In this example we use the CSS transition property to animate the width of the search input when it gets focus. You will learn more about the transition property later, in our CSS Transitions chapter.</p>
+        <input class="animatedSearch" type="text" name="" placeholder="Search..">
+
+        <h2>Styling textarea</h2>
+        <p><strong>Tip:</strong> Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):</p>
+        <textarea>Some text...</textarea>
+
+        <h2>Styling a select menu</h2>
+        <select name="country" id="country">
+            <option value="">Australia</option>
+            <option value="">Canada</option>
+            <option value="">USA</option>
+        </select>
+
+        <h2>Styling form buttons</h2>
+        <input type="button" value="Button">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Responsive Form</h2>
+    <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input class="formInput" type="text" name="fname" id="firstname" placeholder="First Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sname">Second Name</label>
+                </div>
+                <div class="col-75">
+                    <input  class="formInput" type="text" name="sname" id="secondname" placeholder="Second Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select class="formSelect" name="country" id="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea class="formTextarea" name="subject" id="subject" placeholder="Write something" style="height: 200px;"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input class="formSubmit" type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

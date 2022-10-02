@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        #box1 { 
+            background: red;
+            /* Z-Index will works onlyfor Position: relative,absolute,fixed & sticky */
+            position: relative;
+            top: 49px;
+            z-index: 30;
+        }
+
+        #box2 { background: blue; 
+
+            /* Z-Index will works onlyfor Position: relative,absolute,fixed & sticky */
+            position: relative;
+            top: 14px;
+            z-index: 50;
+
+        /* Hide the element and the space*/
+        /*  visibility: hidden;  */
+        /* Will hide the element but will show its empty space */
+        /* display: none;  */
+        }
+
+        #box3 { background: yellow; }
+        #box4 { background: green; }
+        </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

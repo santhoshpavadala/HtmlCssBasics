@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="texteffects.css">
+</head>
+<body>
+    <h1>CSS TEXT EFFECTS</h1>
+    <h2>CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes</h2>
+    <h3>CSS Text Overflow</h3>
+   <p> The CSS text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.
+    It can be clipped: <br>
+    This is some long text that will not fit in the box <br>
+    or it can be rendered as an ellipsis (...): <br>
+    This is some long text that will not fit in the box <br>
+    The CSS code is as follows:</p>
+
+    <h1>The text-overflow Property</h1>
+    <p>The following two paragraphs contains a long text that will not fit in the box.</p>
+    <h2>text-overflow: clip:</h2>
+    <p class="test1">This is some long text that will not fit in the box</p>
+    <h2>text-overflow: ellipsis:</h2>
+    <p class="test2">This is some long text that will not fit in the box</p>
+
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+    <br>
+    <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+    <h1>CSS WORD WRAPPING</h1>
+    <P>The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line. <br> If a word is too long to fit within an area, it expands outside:</P>
+        <p>The word-wrap property allows you to force the text to wrap - even if it means splitting it in the middle of a word:</p>
+        <h1>The word-wrap Property</h1>
+    <p class="test3">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+    <h1>CSS Word Breaking </h1>
+    <p> The CSS word-break property specifies line breaking rules.</p> 
+    <h1>The word-break Property</h1>
+    <p class="test4">This paragraph contains some text. This line will-break-at-hyphens.</p>
+    <p class="test5">This paragraph contains some text. The lines will break at any character.</p>
+
+    <h1>The writing-mode Property</h1>
+    <p class="test6">Some text with default writing-mode.</p>
+    <p>Some text with a span element with a <span class="test7">vertical-rl</span> writing-mode.</p>
+    <p class="test7">Some text with writing-mode: vertical-rl.</p>
+</body>
+</html>
