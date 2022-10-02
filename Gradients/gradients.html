@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gradients.css">
+</head>
+<body>
+    <h1>CSS Gradients</h1>
+    <p>CSS gradients let you display smooth transitions between two or more specified colors.</p> 
+   <p> CSS defines three types of gradients:
+    <br>
+        <b> Linear Gradients (goes down/up/left/right/diagonally)</b><br>
+        <b>Radial Gradients (defined by their center)</b><br>
+        <b>Conic Gradients (rotated around a center point)</b><br>
+    </p>
+
+    <h1>CSS Linear Gradients</h1>
+    <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p> 
+
+    <b> Syntax
+    background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</b>
+
+    <h2>Linear Gradient - Top to Bottom</h2>
+    <p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+    <div id="grad1">Top to Bottom</div>
+
+    <h2>Linear Gradient - Left to Right</h2>
+    <p>This linear gradient starts red at the left, transitioning to yellow (to the right):</p>
+    <div id="grad2">Left to Right</div>
+
+    <h2>Direction - Diagonal</h2>
+   <p> You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
+    The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning to yellow:</p>
+    <div id="grad3">top left to bottom right</div>
+
+     <h2>Using Angles</h2>
+    <p>If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".</p> 
+    <b>Syntax: background-image: linear-gradient(angle, color-stop1, color-stop2);</b>
+    <h1>Linear Gradients - Using Different Angles</h1>
+    <div id="grad4" style="text-align:center;">0deg</div><br>
+    <div id="grad5" style="text-align:center;">90deg</div><br>
+    <div id="grad6" style="text-align:center;">180deg</div><br>
+    <div id="grad7" style="text-align:center;">-90deg</div>
+
+    <h2>Using Multiple Color Stops</h2>
+    <p>The following example shows a linear gradient (from top to bottom) with multiple color stops:</p>
+    <h1>Linear Gradients - Multiple Color Stops</h1>
+    <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+    <h2>3 Color Stops (evenly spaced):</h2>
+    <div id="grad8"></div>
+    <h2>7 Color Stops (evenly spaced):</h2>
+    <div id="grad9"></div>
+    <h2>3 Color Stops (not evenly spaced):</h2>
+    <div id="grad10"></div>
+
+    <h2>Rainbow Background</h2>
+    <div id="grad11" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+        Rainbow Background
+    </div>
+
+    <h1>Linear Gradient - Transparency</h1>
+    <p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+    <div id="grad12"></div>
+
+    <h1>Repeating Linear Gradient</h1>
+    <div id="grad13"></div>
+    <p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+    <div id="grad14"></div>
+    <p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+    <div id="grad15"></div>
+    <p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+    <div id="grad16"></div>
+    <p>A repeating linear gradient with solid stripes:</p>
+    <div id="grad17"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            border: 5px solid red;
+            background-color: antiquewhite;
+            height: 1500px;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 3px solid blue;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        #box2 {
+            position: sticky;
+            top: 5px;
+        }
+
+        #box3 {
+            /* relative: relative to its normal position and will leave a gap at its normal position */
+            /* absolute: relative to its first parent and will leave a gap at its normal position */
+
+            position: absolute;
+            top: 50px;
+            left: 80px;
+        }
+
+        #box4 {
+            /* fixed: relative to its browser window */
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+        }
+    </style>
+    <!-- positions: static(default), relative, absolute, sticky -->
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">Chat with us</div>
+    </div>
+</body>
+</html>

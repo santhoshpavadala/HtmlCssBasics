@@ -1,0 +1,72 @@
+.container {
+    height: 500px;
+    width: 100%;
+    border: 5px solid sienna;
+
+    /* Initialize the container as flex box */
+    display: flex;
+
+    /* Flex properties for Flex container */
+
+    /* Default value of Flex-direction is row */
+    /* flex-direction: row;  */
+
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+
+    /* Default value of Flex-wrap is nowrap */
+    /* flex-wrap: nowrap;  */
+
+    /* flex-wrap: wrap;
+    flex-wrap:wrap-reverse; */
+
+    /* In flex-flow is shorthand property of flex-direction & wrap */
+    /* flex-flow: row wrap; */
+
+    /* Justify content will justify the content horizontal direction */
+    /* justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* Justify content will justify the content vertical direction */
+    /* align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch; */
+}
+
+.item {
+    background-color: brown;
+    border: 3px solid springgreen;
+    margin: 10px;
+    padding: 3px;
+
+    height: 200px;
+    width: 200px;
+}
+
+#item-1 {
+    /* Flex-properties for a flex items */
+    /* order: 2; */
+
+    /* flex-grow: 2;
+    flex-shrink: 2; */
+}
+#item-2 { 
+    /* flex-grow: 3; 
+    flex-shrink: 3; */
+
+    /* When flex-direction is set to row,flex-basis: will control width */
+    /* When flex-direction is set to column,flex-basis: will control height */
+    flex-basis: 160px;
+}
+#item-3 {  
+    /* order: 10;  */
+    flex: 2 2 230px;
+
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+}
