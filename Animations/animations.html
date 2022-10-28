@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <h1>CSS Animations</h1>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash! <br>
+        In this chapter you will learn about the following properties:
+    </p>
+    <nav>
+        <ul>
+            <li>@keyframes</li>
+            <li>animation-name</li>
+            <li>animation-duration</li>
+            <li>animation-delay</li>
+            <li>animation-iteration-count</li>
+            <li>animation-direction</li>
+            <li>animation-timing-function</li>
+            <li>animation-fill-mode</li>
+            <li>animation-fill-mode</li>
+        </ul>
+    </nav>
+
+    <h2>What are CSS Animations?</h2>
+    <p>An animation lets an element gradually change from one style to another. <br>
+        You can change as many CSS properties you want, as many times as you want. <br>
+        To use CSS animation, you must first specify some keyframes for the animation. <br>
+        Keyframes hold what styles the element will have at certain times.</p>
+
+    <h2>The @keyframes Rule</h2>
+    <p>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times. <br>
+        To get an animation to work, you must bind the animation to an element. <br>
+        The following example binds the "example" animation to the <div> element. The animation will last for 4 seconds, and it will gradually change the background-color of the <div> element from "red" to "yellow":
+    </p>
+
+    <h1>CSS Animation</h1>
+    <div class="animation1">Animate1</div>
+    <p style="margin-bottom: 10px;"><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+    <p> <b>Note:</b> The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds). <br>
+        In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)). <br>
+        It is also possible to use percent. By using percent, you can add as many style changes as you like. <br>
+        The following example will change the background-color of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+    <div class="animation2">Animate2</div>
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+    <p>The following example will change both the background-color and the position of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+    <div class="animation3">Animate3</div>
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+    <h1>Delay an Animation</h1>
+    <p>The animation-delay property specifies a delay for the start of an animation. <br>
+    The following example has a 2 seconds delay before starting the animation:</p>
+    <h2>CSS Animation</h2>
+    <p>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</p>
+    <div class="animation4">Animate4</div>
+
+    <h1>Set How Many Times an Animation Should Run-Animation - iteration-count: </h1>
+    <p>The <b>animation-iteration-count</b> property specifies the number of times an animation should run. <br>
+    The following example will run the animation 3 times before it stops:</p>
+    <h2>CSS Animation</h2>
+    <p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+    <div class="animation5">Animate5</div>
+
+    <h1>Run Animation in Reverse Direction or Alternate Cycles - Animation-direction;</h1>
+    <p> The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. <br>
+    The <b>animation-direction</b> property can have the following values:
+    <ul style="padding: 15px;">
+        <li> <b>normal</b>  - The animation is played as normal (forwards). This is default</li>
+        <li> <b>reverse</b> - The animation is played in reverse direction (backwards)</li>
+        <li> <b>alternate</b> - The animation is played forwards first, then backwards</li>
+        <li> <b>alternate-reverse</b> - The animation is played backwards first, then forwards</li>
+    </ul>
+    The following example will run the animation in reverse direction (backwards):</p>
+    <div class="animation6">AnimatE6</div>
+
+    <h1>Specify the Speed Curve of the Animation - animation-timing-function;</h1>
+    <p>The animation-timing-function property specifies the speed curve of the animation.
+    The animation-timing-function property can have the following values:
+    <ul style="padding: 15px;">
+        <li> <b>ease</b>  - Specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
+        <li> <b>linear</b> - Specifies an animation with the same speed from start to end</li>
+        <li> <b>ease-in </b> - Specifies an animation with a slow start</li>
+        <li> <b>ease-out </b> - Specifies an animation with a slow end</li>
+        <li> <b>ease-in-out</b> -  Specifies an animation with a slow start and end</li>
+        <li> <b>cubic-bezier(n,n,n,n) </b> -Lets you define your own values in a cubic-bezier function</li>
+    </ul>
+    The following example shows some of the different speed curves that can be used:</p>
+    <p>The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
+    <div class="animation7" id="anim71">linear</div>
+    <div class="animation7" id="anim72">ease</div>
+    <div class="animation7" id="anim73">ease-in</div>
+    <div class="animation7" id="anim74">ease-out</div>
+    <div class="animation7" id="anim75">ease-in-out</div>
+
+    <h1>Animation Shorthand Property</h1>
+    <p>The example below uses six of the animation properties:</p>
+    <div class="animation8">Shorthand</div>
+</body>
+</html>
