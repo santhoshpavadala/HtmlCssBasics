@@ -1,0 +1,33 @@
+.toggleIcon div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: black;
+}
+
+.toggleAnimateIcon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle1, .toggle2, .toggle3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+     transition: 0.5s; /*for smooth movement */
+}
+
+.rotate .toggle1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.rotate .toggle2 {
+    opacity: 0;
+}
+
+.rotate .toggle3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+

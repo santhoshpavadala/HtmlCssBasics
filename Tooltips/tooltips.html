@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tooltips.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <h1>Tooltips in css</h1>
+    <p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element:</p>
+    <h2>Basic Tooltip</h2>
+    <p>Create a tooltip that appears when the user moves the mouse over an element:</p>
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip Text</span>
+    </div>
+
+   <p> Example Explained <br>
+    <b>HTML</b>: Use a container element (like div) and add the <b>"tooltip"</b> class to it. When the user mouse over this div, it will show the tooltip text. <br>
+    The tooltip text is placed inside an inline element (like span) with <b>class="tooltiptext"</b> . <br>
+    <b>CSS</b>: The <b>tooltip</b> class use <b> position:relative</b>, which is needed to position the tooltip text <b>(position:absolute)</b> . Note: See examples below on how to position the tooltip. <br>
+    The <b>tooltiptext</b> class holds the actual tooltip text. It is hidden by default, and will be visible on hover (see below). We have also added some basic styles to it: 120px width, black background color, white text color, centered text, and 5px top and bottom padding. <br>
+    The CSS <b>border-radius</b> property is used to add rounded corners to the tooltip text. <br>
+    The <b>:hover</b> selector is used to show the tooltip text when the user moves the mouse over the <div> with class="tooltip".
+    </p>
+
+    <h2>Positioning Tooltips</h2>
+    <p>In this example, the tooltip is placed to the right (left:105%) of the "hoverable" text (<div>). Also note that top:-5px is used to place it in the middle of its container element. We use the number 5 because the tooltip text has a top and bottom padding of 5px. If you increase its padding, also increase the value of the top property to ensure that it stays in the middle (if this is something you want). The same applies if you want the tooltip placed to the left.</p>
+    <div class="tooltipcontainer">
+        <div class="tooltip2">Right Tooltip
+            <span class="tooltiptext2">Tooltip Text</span>
+        </div>
+    </div>
+    <p>In this example, the tooltip is placed to the left (right:105%) of the "hoverable" text (<div>). Also note that top:-5px is used to place it in the middle of its container element. We use the number 5 because the tooltip text has a top and bottom padding of 5px. If you increase its padding, also increase the value of the top property to ensure that it stays in the middle (if this is something you want). The same applies if you want the tooltip placed to the left.</p>
+    <div class="tooltipcontainer">
+        <div class="tooltip3">Right Tooltip
+            <span class="tooltiptext3">Tooltip Text</span>
+        </div>
+    </div>
+</body>
+</html>

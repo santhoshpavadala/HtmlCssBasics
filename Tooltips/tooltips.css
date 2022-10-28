@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    padding: 15px;
+    background-color:antiquewhite;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext{ visibility: visible; }
+
+/* Right tooltip */
+.tooltip2 {
+    display: inline-block;
+    position: relative;
+    border: 1px dotted black;
+}
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    left: 105%;
+    top: -5px;
+}
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+/* Left tooltip */
+.tooltipcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip3 {
+    display: inline-block;
+    position: relative;
+    border: 1px dotted black;
+}
+.tooltip3 .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: 105%;
+    top: -5px;
+}
+.tooltip3:hover .tooltiptext3 {
+    visibility: visible;
+}
