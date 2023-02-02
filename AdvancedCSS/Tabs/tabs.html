@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="tabs.css">
+</head>
+<body>
+    <h2>Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTabs(event, 'home')">Home</button>
+        <button class="tablinks" onclick="openTabs(event, 'about')">About</button>
+        <button class="tablinks" onclick="openTabs(event, 'contact')">Contact</button>
+    </div>
+    <div class="tabContent" id="home">
+        <h2>Home</h2>
+        <p>This is Home Content</p>
+    </div>;
+    <div class="tabContent" id="about">
+        <h2>About</h2>
+        <p>This is About Content</p>
+    </div>
+    <div class="tabContent" id="contact">
+        <h2>Contact</h2>
+        <p>This is Contact Content</p>
+    </div>
+    <script src="./tabs.js"></script>
+</body>
+</html>

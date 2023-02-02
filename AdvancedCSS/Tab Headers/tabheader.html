@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Headers</title>
+    <link rel="stylesheet" href="tabheader.css">
+</head>
+<body>
+    <h2>Tab Headers</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <button class="tablink" onclick="openTabs('Home', this, 'red')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openTabs('About', this, 'green')">About</button>
+    <button class="tablink" onclick="openTabs('Contacts', this, 'blue')">Contacts</button>
+    <button class="tablink" onclick="openTabs('Services', this, 'orange')">Services</button>
+
+
+    <div class="tabcontent" id="Home">
+        <h1>Home</h1>
+        <p>This is Home Page Tab Content</p>
+    </div>
+    <div class="tabcontent" id="About">
+        <h1>About</h1>
+        <p>This is About Page Tab Content</p>
+    </div>
+    <div class="tabcontent" id="Contacts">
+        <h1>Contacts</h1>
+        <p>This is Contacts Page Tab Content</p>
+    </div>
+    <div class="tabcontent" id="Services">
+        <h1>Services</h1>
+        <p>This is Services Page Tab Content</p>
+    </div>
+
+    
+    <script src="tabheader.js"></script>
+</body>
+</html>

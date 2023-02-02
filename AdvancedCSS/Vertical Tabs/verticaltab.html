@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <link rel="stylesheet" href="verticaltabs.css">
+</head>
+<body>
+    <h2>Vertical Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+
+    <div class="tabcontent" id="Home">
+        <h3>Home</h3>
+        <p>This is Home page</p>
+    </div>
+    <div class="tabcontent" id="About">
+        <h3>About</h3>
+        <p>This is About page</p>
+    </div>
+    <div class="tabcontent" id="Contact">
+        <h3>Contact</h3>
+        <p>This is Contact page</p>
+    </div>
+
+    <script src="verticaltabs.js"></script>
+</body>
+</html>

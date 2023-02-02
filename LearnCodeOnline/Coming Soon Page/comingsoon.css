@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&family=Roboto+Mono:wght@700&display=swap');
+
+
+/* Declaring variables */
+:root {
+    --yellow: #ffbb30;
+    --black: #242424;
+    --grey: #818181;
+    --blue: #0070d2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+body { 
+    background-color: var(--yellow);
+}
